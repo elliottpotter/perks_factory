@@ -8,13 +8,12 @@ set :repo_url, "TODO"
 fetch(:mb_recipes) << "sidekiq"
 fetch(:mb_aptitude_packages)["redis-server@ppa:chris-lea/redis-server"] = :redis
 
-set :mb_dotenv_keys, %w(
-  rails_secret_key_base
-  redis_url
-  sidekiq_web_username
-  sidekiq_web_password
-)
-
-  # postmark_api_key was in the above list
+# set :mb_dotenv_keys, %w(
+#   postmark_api_key
+#   rails_secret_key_base
+#   redis_url
+#   sidekiq_web_username
+#   sidekiq_web_password
+# )
 
 after "deploy:published", "bundler:clean"
