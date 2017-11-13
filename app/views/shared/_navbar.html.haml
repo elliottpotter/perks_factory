@@ -1,0 +1,41 @@
+.navbar.navbar-default.navbar-static-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a{href: "#"}
+        %img{src: "//static1.squarespace.com/static/599b85ccd482e91fc8d4afd4/t/59b5c0dd49fc2b50d09655c7/1506036054535/?format=1500w", style: "height: 90px; width: 162px"}
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        = navbar_link_to("Home", root_path, :active_when => { :controller => "home" })
+        %li
+          %a{:href => "#contact"} Contact
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#", data: { toggle: 'dropdown' }}
+            More
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "/users"} Users
+            %li
+              %a{:href => "/categories"} Categories
+            %li
+              %a{:href => "/vendors/new"} Vendors
+            %li
+              %a{:href => "/perks"} Perks
+            %li.divider
+            %li.dropdown-header Nav header
+            %li
+              %a{:href => "#"} Separated link
+            %li
+              %a{:href => "#"} One more separated link
+      %ul.nav.navbar-nav.navbar-right
+        - if current_user
+          %li= link_to "Edit Profile", edit_user_path(current_user.id)
+          %li= link_to "Logout", :logout, method: :post
+        - else
+          %li= link_to "Register", new_user_path
+          %li= link_to "Login", :login

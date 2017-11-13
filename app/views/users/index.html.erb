@@ -1,0 +1,40 @@
+<% provide(:title, "Listing users") %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Crypted password</th>
+      <th>Salt</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.crypted_password %></td>
+        <td><%= user.salt %></td>
+        <td>
+          <div class="btn-group">
+            <%= link_to user, :class => "btn btn-xs btn-default" do %>
+              <%= fa_icon("eye", :text => "Show") %>
+            <% end %>
+            <%= link_to edit_user_path(user), :class => "btn btn-xs btn-default" do %>
+              <%= fa_icon("pencil", :text => "Edit") %>
+            <% end %>
+            <%= link_to user, :class => "btn btn-xs btn-danger", :method => :delete, :data => { :confirm => "Are you sure you want to delete this user?" } do %>
+              <%= fa_icon("trash-o", :text => "Destroy") %>
+            <% end %>
+          </div>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_user_path, :class => "btn btn-default" do %>
+  <%= fa_icon("plus", :text => "New User") %>
+<% end %>

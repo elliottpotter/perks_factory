@@ -3,3 +3,23 @@
 //= require font-awesome
 //= require_tree .
 //= require_self
+
+@import 'home';
+@import 'user_sessions';
+
+.navbar {
+  background-color: white;
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  color: white;
+   text-decoration: none;
+}
+
+.perk-card {
+  box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}

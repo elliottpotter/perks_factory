@@ -1,0 +1,12 @@
+= simple_form_for(@perk) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.association :vendor
+    = f.association :residence
+    = f.input :begins_at
+    = f.input :ends_at
+
+  .form-actions
+    = f.button :submit

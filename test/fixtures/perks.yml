@@ -1,0 +1,39 @@
+# == Schema Information
+#
+# Table name: perks
+#
+#  begins_at    :datetime
+#  created_at   :datetime         not null
+#  ends_at      :datetime
+#  id           :integer          not null, primary key
+#  name         :string
+#  residence_id :integer
+#  updated_at   :datetime         not null
+#  vendor_id    :integer
+#
+# Indexes
+#
+#  index_perks_on_residence_id  (residence_id)
+#  index_perks_on_vendor_id     (vendor_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (residence_id => residences.id)
+#  fk_rails_...  (vendor_id => vendors.id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  vendor: one
+  residence: one
+  begins_at: 2017-11-01 19:13:22
+  ends_at: 2017-11-01 19:13:22
+
+two:
+  name: MyString
+  vendor: two
+  residence: two
+  begins_at: 2017-11-01 19:13:22
+  ends_at: 2017-11-01 19:13:22

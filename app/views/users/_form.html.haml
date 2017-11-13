@@ -1,0 +1,32 @@
+.div.new-user-card
+  .col-md-4
+    = bootstrap_nested_form_for @user do |f|
+      = f.text_field :email, placeholder: "me@example.com", label: false
+      = f.password_field :password, placeholder: "Password (6-12 characters)", label: false
+      = f.password_field :password_confirmation, placeholder: "Confirm password", label: false
+      = f.check_box :marketing_communication, checked: "checked", label: "Opt in to marketing communication?"
+      %hr
+      %br
+      %h3 Select All That Interest You
+      -# - categories = @user.persisted? ? @categories : @categories
+      - @categories.each do |category|
+        = f.fields_for :category do |cat_form|
+          = cat_form.hidden_field category.id, value: category.id
+          = cat_form.check_box :name, label: category.name
+      %br
+      %br
+      - submit_text = @user.persisted? ? "Update Profile" : "Sign Up!"
+      = f.submit submit_text, class: "btn btn-info"
+
+  -#
+  -# .div.new-user-card
+  -#   .col-md-4
+  -#     = bootstrap_form_for @user do |f|
+  -#       = f.text_field :email, placeholder: "email", label: false
+  -#       = f.password_field :password, placeholder: "password", label: false
+  -#       = f.password_field :password_confirmation, placeholder: "password_confirmation", label: false
+  -#       = f.input :marketing_communication, as: :boolean, label: "Opt in to marketing communication?"
+  -#       - @categories.each do |cat|
+  -#         = f.simple_fields_for :cat do |cat_form|
+  -#           = cat_form.input :id, as: :boolean, label: cat.name
+  -#       = f.submit "Sign Up!", class: "btn btn-info"

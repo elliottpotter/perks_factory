@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @perk.name
+%p
+  %b Vendor:
+  = @perk.vendor
+%p
+  %b Residence:
+  = @perk.residence
+%p
+  %b Begins at:
+  = @perk.begins_at
+%p
+  %b Ends at:
+  = @perk.ends_at
+
+= link_to 'Edit', edit_perk_path(@perk)
+\|
+= link_to 'Back', perks_path

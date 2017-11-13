@@ -1,0 +1,18 @@
+%div.login-card
+  = form_tag user_sessions_path, method: :post do
+    .field
+      = label_tag :email
+      %br
+      = text_field_tag :email
+    .field
+      = label_tag :password
+      %br
+      = password_field_tag :password
+    .actions
+      %br
+      %br
+      = submit_tag "Login", class: "btn btn-info"
+  %br
+  .centered{style: "font-size: 20px"} Or
+  %br
+  = link_to "Sign Up", new_user_path, class: "btn btn-success center-block", style: "font-size: 18px"

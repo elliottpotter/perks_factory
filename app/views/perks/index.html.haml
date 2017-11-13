@@ -1,0 +1,13 @@
+- @perks.each do |perk|
+  .col-md-3
+    .div.perk-card
+      %h2= perk.name
+      %br
+      %br
+      %br
+      %h3 Where to get it
+      %h5= perk.vendor.name
+      %br
+      %br
+      %h3 Exclusively At
+      %h5= perk.residence.name

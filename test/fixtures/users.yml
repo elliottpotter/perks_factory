@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  created_at              :datetime         not null
+#  crypted_password        :string
+#  email                   :string           not null
+#  id                      :integer          not null, primary key
+#  marketing_communication :boolean
+#  salt                    :string
+#  updated_at              :datetime         not null
+#
+# Indexes
+#
+#  index_users_on_email  (email) UNIQUE
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  crypted_password: MyString
+  salt: MyString
+
+two:
+  email: MyString
+  crypted_password: MyString
+  salt: MyString

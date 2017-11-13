@@ -1,0 +1,25 @@
+<% provide(:title) do %>
+  User #<%= @user.id %>
+<% end %>
+
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th class="col-sm-2">Email</th>
+      <td><%= @user.email %></td>
+    </tr>
+    <tr>
+      <th class="col-sm-2">Crypted password</th>
+      <td><%= @user.crypted_password %></td>
+    </tr>
+    <tr>
+      <th class="col-sm-2">Salt</th>
+      <td><%= @user.salt %></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <%= link_to "Edit", edit_user_path(@user), :class => "btn btn-primary" %>
+  <%= link_to "Back", users_path, :class => "btn btn-link" %>
+</p>
