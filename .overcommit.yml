@@ -33,17 +33,17 @@ PreCommit:
   RailsSchemaUpToDate:
     enabled: true
 
-  RuboCop:
-    enabled: true
-    on_warn: fail
+  # RuboCop:
+  #   enabled: true
+  #   on_warn: fail
 
-  TrailingWhitespace:
-    enabled: true
-    exclude:
-      - "**/db/structure.sql"
+  # TrailingWhitespace:
+  #   enabled: true
+  #   exclude:
+  #     - "**/db/structure.sql"
 
-  YamlSyntax:
-    enabled: true
+  # YamlSyntax:
+  #   enabled: true
 
 PostCheckout:
   ALL:

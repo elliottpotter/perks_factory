@@ -34,7 +34,7 @@ gem "paperclip"
 gem "aws-sdk", "~> 2.3"
 
 group :production, :staging do
-  gem "postmark-rails"
+  # gem "postmark-rails"
   gem "unicorn"
   gem "unicorn-worker-killer"
 end
