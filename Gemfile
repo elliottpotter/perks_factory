@@ -13,7 +13,6 @@ gem 'engtagger'
 gem 'figaro'
 gem 'mechanize'
 gem 'selenium-webdriver'
-gem 'chromedriver-helper'
 gem "active_type", ">= 0.3.2"
 gem "autoprefixer-rails", ">= 5.0.0.1"
 gem "bcrypt", "~> 3.1.7"
