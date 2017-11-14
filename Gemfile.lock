@@ -240,6 +240,7 @@ GEM
       googleauth (~> 0.5.1)
       grpc (~> 1.0)
       rly (~> 0.2.3)
+    google-protobuf (3.2.0.2)
     google-protobuf (3.2.0.2-universal-darwin)
     googleapis-common-protos (1.3.5)
       google-protobuf (~> 3.2)
@@ -252,6 +253,9 @@ GEM
       multi_json (~> 1.11)
       os (~> 0.9)
       signet (~> 0.7)
+    grpc (1.4.1)
+      google-protobuf (~> 3.1)
+      googleauth (~> 0.5.1)
     grpc (1.4.1-universal-darwin)
       google-protobuf (~> 3.1)
       googleauth (~> 0.5.1)
@@ -544,6 +548,10 @@ GEM
     useragent (0.16.8)
     watir (6.8.4)
       selenium-webdriver (~> 3.4, >= 3.4.1)
+    webdrivers (3.2.1)
+      nokogiri (~> 1.6)
+      rubyzip (~> 1.0)
+      selenium-webdriver (~> 3.0)
     webrobots (0.1.2)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
@@ -630,6 +638,7 @@ DEPENDENCIES
   unicorn
   unicorn-worker-killer
   watir (>= 6.7.1)
+  webdrivers
   xray-rails (>= 0.1.18)
 
 RUBY VERSION
