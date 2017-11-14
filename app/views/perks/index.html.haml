@@ -2,7 +2,7 @@
 
 .container.perks-container
   - @perks.each do |perk|
-    .col-lg-3.col-md-6
+    .col-lg-3.col-md-4
       .div.perk-card
         .div.centered= image_tag perk.image.url(:perk)
         .div.centered= image_tag perk.vendor.image.url(:perk)
