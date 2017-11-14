@@ -4,14 +4,15 @@
 #
 #  begins_at          :datetime
 #  created_at         :datetime         not null
+#  description        :string
 #  ends_at            :datetime
 #  id                 :integer          not null, primary key
 #  image_content_type :string
 #  image_file_name    :string
 #  image_file_size    :integer
 #  image_updated_at   :datetime
-#  name               :string
 #  residence_id       :integer
+#  title              :string
 #  updated_at         :datetime         not null
 #  vendor_id          :integer
 #
