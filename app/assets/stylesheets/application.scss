@@ -7,6 +7,14 @@
 @import 'home';
 @import 'user_sessions';
 @import '//fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro|Raleway:200,300,400';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,300,400';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import '//fonts.googleapis.com/css?family=Lato:400,700';
+@import '//fonts.googleapis.com/css?family=Source+Sans+Pro';
+@import '//fonts.googleapis.com/css?family=Raleway:200,300,400';
+@import '//fonts.googleapis.com/css?family=Raleway';
 
 .perks {
   background-color: #f9f9f9;
@@ -32,7 +40,7 @@ a {
 .perk-title {
   font-size: 42px;
   font-family: 'Raleway';
-  // font-weight: lighter;
+  font-weight: lighter;
   color: #727272;
 }
 
