@@ -9,5 +9,5 @@
 #
 
 class Residence < ApplicationRecord
-  has_many :phone_numbers, as: :owner
+  has_many :users
 end

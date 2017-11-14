@@ -5,6 +5,15 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.4.0'
+gem 'watir', '>= 6.7.1'
+gem 'rest-client'
+gem 'google-cloud'
+gem 'engtagger'
+gem 'figaro'
+gem 'mechanize'
+gem 'selenium-webdriver'
+gem 'chromedriver-helper'
 gem "active_type", ">= 0.3.2"
 gem "autoprefixer-rails", ">= 5.0.0.1"
 gem "bcrypt", "~> 3.1.7"
