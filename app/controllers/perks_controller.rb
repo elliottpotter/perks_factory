@@ -1,6 +1,5 @@
 class PerksController < ApplicationController
   before_action :set_perk, only: [:show, :edit, :update, :destroy]
-  layout "perks"
 
   # GET /perks
   def index

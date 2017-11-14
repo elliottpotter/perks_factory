@@ -1,19 +1,19 @@
-@import 'home';
-@import 'user_sessions';
-@import '//fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro|Raleway:200,300,400';
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
-@import 'https://fonts.googleapis.com/css?family=Raleway';
-@import '//fonts.googleapis.com/css?family=Lato:400,700';
-@import '//fonts.googleapis.com/css?family=Source+Sans+Pro';
-@import '//fonts.googleapis.com/css?family=Raleway:200,300,400';
-@import '//fonts.googleapis.com/css?family=Raleway';
-
 //= require ./bootstrap
 //= require rails_bootstrap_forms
 //= require font-awesome
 //= require_tree .
 //= require_self
+
+@import 'home';
+@import 'user_sessions';
+@import '//fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro|Raleway:200,300,400';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+@import '//fonts.googleapis.com/css?family=Lato:400,700';
+@import '//fonts.googleapis.com/css?family=Source+Sans+Pro';
+@import '//fonts.googleapis.com/css?family=Raleway:200,300,400';
+@import '//fonts.googleapis.com/css?family=Raleway';
+
 
 .perks {
   background-color: #f9f9f9;
