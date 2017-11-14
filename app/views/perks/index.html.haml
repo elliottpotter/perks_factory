@@ -1,13 +1,14 @@
-- @perks.each do |perk|
-  .col-md-3
-    .div.perk-card
-      %h2= perk.name
-      %br
-      %br
-      %br
-      %h3 Where to get it
-      %h5= perk.vendor.name
-      %br
-      %br
-      %h3 Exclusively At
-      %h5= perk.residence.name
+.centered.perk-title Today's Perks
+
+.container.perks-container
+  - @perks.each do |perk|
+    .col-lg-3.col-md-6
+      .div.perk-card
+        .div.centered= image_tag perk.image.url(:perk)
+        .div.centered= image_tag perk.vendor.image.url(:perk)
+        %hr
+        %h4 Come See What You've Been Missing
+        %h5= perk.vendor.name
+        %br
+        %h4 Exclusively At
+        %h5= perk.residence.name

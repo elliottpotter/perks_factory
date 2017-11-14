@@ -6,6 +6,11 @@
 
 @import 'home';
 @import 'user_sessions';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro|Raleway:200,300,400';
+
+.perks {
+  background-color: #f9f9f9;
+}
 
 .navbar {
   background-color: white;
@@ -17,9 +22,38 @@
 
 a {
   color: white;
-   text-decoration: none;
+  text-decoration: none;
+}
+
+.perks-container {
+  background-color: #f9f9f9;
+}
+
+.perk-title {
+  font-size: 42px;
+  font-family: 'Raleway';
+  // font-weight: lighter;
+  color: #727272;
 }
 
 .perk-card {
-  box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+
+  h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #727272;
+  }
+
+  h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold !important;
+    color: #848484;
+  }
+
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 6px 8px 2px rgba(0,0,0,0.35);
+  height: 350px;
+  margin: 10px;
+  padding: 15px;
 }

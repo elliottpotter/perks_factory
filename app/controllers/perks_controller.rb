@@ -1,5 +1,6 @@
 class PerksController < ApplicationController
   before_action :set_perk, only: [:show, :edit, :update, :destroy]
+  layout "perks"
 
   # GET /perks
   def index
@@ -53,6 +54,6 @@ class PerksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def perk_params
-      params.require(:perk).permit(:name, :vendor_id, :residence_id, :begins_at, :ends_at)
+      params.require(:perk).permit(:name, :vendor_id, :residence_id, :begins_at, :ends_at, :image)
     end
 end
