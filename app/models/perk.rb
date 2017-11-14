@@ -33,7 +33,7 @@ class Perk < ApplicationRecord
   has_attached_file :image, styles: {
     perk:   '200x150>',
     square: '200x200#',
-    medium: '300x300>',
+    medium: '300x300>'
   }
 
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
