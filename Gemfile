@@ -40,6 +40,8 @@ gem "simple_form"
 gem "nested_form"
 gem "paperclip"
 gem "aws-sdk", "~> 2.3"
+gem "pry"
+gem "pry-byebug"
 
 group :production, :staging do
   # gem "postmark-rails"
